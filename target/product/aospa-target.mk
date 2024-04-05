@@ -74,6 +74,10 @@ PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := everything
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     config.disable_otadexopt=true
 
+# Disable phantom process monitoring
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
 # Display
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     debug.sf.frame_rate_multiple_threshold=60 \
