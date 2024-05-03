@@ -145,6 +145,7 @@ USE_DEX2OAT_DEBUG := false
 # Java Optimizations
 SYSTEM_OPTIMIZE_JAVA := true
 SYSTEMUI_OPTIMIZE_JAVA := true
+FULL_SYSTEM_OPTIMIZE_JAVA := true
 
 # Microsoft
 $(call inherit-product, vendor/aospa/prebuilt/microsoft/packages.mk)
