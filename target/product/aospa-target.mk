@@ -164,6 +164,11 @@ SYSTEM_OPTIMIZE_JAVA := true
 SYSTEMUI_OPTIMIZE_JAVA := true
 FULL_SYSTEM_OPTIMIZE_JAVA := true
 
+# LMOFreeform
+PRODUCT_PACKAGES += \
+    LMOFreeform \
+    LMOFreeformSidebar
+
 # Microsoft
 $(call inherit-product, vendor/aospa/prebuilt/microsoft/packages.mk)
 
