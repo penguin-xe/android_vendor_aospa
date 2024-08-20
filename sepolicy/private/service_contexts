@@ -12,3 +12,6 @@ lineagehealth                               u:object_r:lineage_health_interface_
 
 # App lock
 app_lock                                    u:object_r:app_lock_service:s0
+
+# Freeform
+lmo_freeform                                u:object_r:lmofreeform_service:s0
