@@ -20,6 +20,8 @@ PRODUCT_PACKAGES += \
     AOSPANetworkStackOverlay \
     AOSPANetworkStackMainlineOverlay \
     AOSPANotchBarKillerOverlay \
+    AOSPAPermissionControllerOverlay \
+    AOSPAPermissionControllerMainlineOverlay \
     AOSPASettingsOverlay \
     AOSPASettingsProviderOverlay \
     AOSPASystemUIOverlay \
