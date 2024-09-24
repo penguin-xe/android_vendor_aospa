@@ -4,6 +4,6 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-    <integer name="quick_settings_max_rows">1</integer>
+    <integer name="quick_settings_max_rows">2</integer>
     <integer name="quick_qs_panel_max_tiles">4</integer>
 </resources>
