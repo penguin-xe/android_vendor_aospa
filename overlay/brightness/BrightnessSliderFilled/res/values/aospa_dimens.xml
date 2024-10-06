@@ -1,0 +1,8 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- QS auto brightness icon -->
+    <dimen name="qs_auto_brightness_toggle_size">30dp</dimen>
+    <dimen name="qs_auto_brightness_icon_size">18dp</dimen>
+    <dimen name="qs_auto_brightness_toggle_marginStart">12dp</dimen>
+
+</resources>
