@@ -1,0 +1,11 @@
+
+android_app_import {
+    apk: "Glimpse.apk",
+    name: "Glimpse",
+    overrides: ["Photos"],
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    product_specific: true,
+}

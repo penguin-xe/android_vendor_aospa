@@ -46,9 +46,13 @@ endif
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.config.media_vol_steps=30
 
+# Browser
+PRODUCT_PACKAGES += \
+    FOSSBrowser
+
 # Camera
 PRODUCT_PACKAGES += \
-    GoogleCameraGo
+    Aperture
 
 # curl
 PRODUCT_PACKAGES += \
