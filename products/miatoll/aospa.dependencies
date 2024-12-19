@@ -1,15 +1,16 @@
 [
     {
-        "remote":       "aospa",
-        "repository":   "AOSPA/android_device_xiaomi_miatoll",
+        "remote":       "github",
+        "repository":   "rbnj/device_xiaomi_miatoll",
         "target_path":  "device/xiaomi/miatoll",
-        "revision":     "uvite"
+        "revision":     "unity"
     },
     {
-        "remote":       "aospa",
-        "repository":   "AOSPA/android_kernel_xiaomi_miatoll",
+        "remote":       "github",
+        "repository":   "rbnj/positron_miatoll",
         "target_path":  "kernel/xiaomi/miatoll",
-        "revision":     "uvite"
+        "revision":     "unity"
+        "clone-depth":  "1"
     },
     {
         "remote":       "aospa",
@@ -18,8 +19,8 @@
         "revision":     "uvite-855"
     },
     {
-        "remote":       "aospa",
-        "repository":   "AOSPA/android_hardware_qcom_display",
+        "remote":       "penguin-xe",
+        "repository":   "penguin-xe/android_hardware_qcom_display",
         "target_path":  "hardware/qcom/display",
         "revision":     "uvite-855"
     },
@@ -36,8 +37,8 @@
         "revision":     "uvite-855"
     },
     {
-        "remote":       "aospa",
-        "repository":   "AOSPA/android_hardware_xiaomi",
+        "remote":       "penguin-xe",
+        "repository":   "penguin-xe/android_hardware_xiaomi",
         "target_path":  "hardware/xiaomi",
         "revision":     "uvite"
     },
@@ -60,9 +61,9 @@
         "revision":     "uvite-pn5xx"
     },
     {
-        "remote":       "blobs",
-        "repository":   "proprietary_vendor_xiaomi",
-        "target_path":  "vendor/xiaomi",
+        "remote":       "github",
+        "repository":   "rbnj/vendor_xiaomi_miatoll",
+        "target_path":  "vendor/xiaomi/miatoll",
         "revision":     "uvite",
         "clone-depth":  "1"
     },
@@ -70,7 +71,7 @@
         "remote":       "blobs-gitlab",
         "repository":   "proprietary_vendor_xiaomi_camera",
         "target_path":  "vendor/xiaomi/camera",
-        "revision":     "uvite-miatoll",
+        "revision":     "8f10b0f93f8915f67778166ddeab4ba282e78e11",
         "clone-depth":  "1"
     }
 ]
