@@ -6,7 +6,7 @@
 
     <overlay
         android:isStatic="true"
-        android:priority="600"
+        android:priority="800"
         android:targetName="PermissionControllerStyles"
         android:targetPackage="com.android.permissioncontroller" />
 </manifest>
