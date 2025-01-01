@@ -5,9 +5,9 @@
 -->
 <partition-order>
     <partition name="system"/>
-    <partition name="product"/>
+    <partition name="system_ext"/>
     <partition name="oem"/>
     <partition name="vendor"/>
-    <partition name="system_ext"/>
+    <partition name="product"/>
     <partition name="odm"/>
 </partition-order>
