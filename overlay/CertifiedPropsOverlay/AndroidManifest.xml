@@ -8,8 +8,5 @@
 
     <application android:hasCode="false"/>
 
-    <overlay
-        android:isStatic="true"
-        android:priority="850"
-        android:targetPackage="android" />
+    <overlay android:targetPackage="android"/>
 </manifest>
