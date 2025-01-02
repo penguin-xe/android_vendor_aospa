@@ -11,6 +11,15 @@
         <do-not-install-in user-type="android.os.usertype.profile.PRIVATE" />
     </install-in-user-type>
 
+    <!--  Aperture  -->
+    <install-in-user-type package="org.lineageos.aperture.dev">
+        <install-in user-type="SYSTEM" />
+        <install-in user-type="FULL" />
+        <install-in user-type="PROFILE" />
+        <do-not-install-in user-type="android.os.usertype.profile.CLONE" />
+        <do-not-install-in user-type="android.os.usertype.profile.PRIVATE" />
+    </install-in-user-type>
+
     <!--  FMRadio  -->
     <install-in-user-type package="com.caf.fmradio">
         <install-in user-type="SYSTEM" />
@@ -31,6 +40,15 @@
 
     <!--  GcamGO  -->
     <install-in-user-type package="com.google.android.apps.cameralite">
+        <install-in user-type="SYSTEM" />
+        <install-in user-type="FULL" />
+        <install-in user-type="PROFILE" />
+        <do-not-install-in user-type="android.os.usertype.profile.CLONE" />
+        <do-not-install-in user-type="android.os.usertype.profile.PRIVATE" />
+    </install-in-user-type>
+
+    <!--  Glimpse  -->
+    <install-in-user-type package="org.lineageos.glimpse.dev">
         <install-in user-type="SYSTEM" />
         <install-in user-type="FULL" />
         <install-in user-type="PROFILE" />
