@@ -111,6 +111,10 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product, external/google-fonts/lato/fonts.mk)
 
+# Gallery
+PRODUCT_PACKAGES += \
+    FossifyGallery
+
 # GameSpace
 PRODUCT_PACKAGES += \
     GameSpace
