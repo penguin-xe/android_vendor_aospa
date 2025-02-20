@@ -231,11 +231,14 @@ elif [ "${KEY_MAPPINGS}" ]; then
         PenguinOS-$AOSPA_VERSION.zip
     if [ -z "$FLAG_IMG_ZIP" ]; then
         IMG_SIZE=$(ls -nl "$OTA_FILE" | awk '{print $5}')
+        IMG_SIZE_MB=$(( ${IMG_SIZE} / 1024 / 1024 ))
+        IMG_MD5=$(md5sum "$OTA_FILE" | awk '{print $1}')
         IMG_SHA256=$(sha256sum "$OTA_FILE" | awk '{print $1}')
 	UTCSTAMP=$(grep 'ro.build.date.utc=' "$OUT"/system/build.prop | sed 's/^.*=//')
 	echo ""
  	echo "${CLR_BLD_GRN}OTA zip Complete:${CLR_RST} PenguinOS-$AOSPA_VERSION.zip${CLR_RST}"
-        echo "${CLR_BLD_GRN}SIZE:${CLR_RST} $IMG_SIZE bytes"
+        echo "${CLR_BLD_GRN}SIZE:${CLR_RST} $IMG_SIZE_MB MB"
+        echo "${CLR_BLD_GRN}md5sum:${CLR_RST} $IMG_MD5"
         echo "${CLR_BLD_GRN}SHA256:${CLR_RST} $IMG_SHA256"
 	echo "${CLR_BLD_GRN}BUILD STAMP:${CLR_RST} $UTCSTAMP"
     fi
@@ -260,12 +263,15 @@ elif [ "${KEY_MAPPINGS}" ]; then
             PenguinOS-$AOSPA_VERSION-signed-target_files-$FILE_NAME_TAG.zip \
             PenguinOS-$AOSPA_VERSION-image.zip
 	IMG_SIZE=$(ls -nl "$OTA_FILE" | awk '{print $5}')
+        IMG_SIZE_MB=$(( ${IMG_SIZE} / 1024 / 1024 ))
+        IMG_MD5=$(md5sum "$OTA_FILE" | awk '{print $1}')
         IMG_SHA256=$(sha256sum "$OTA_FILE" | awk '{print $1}')
 	UTCSTAMP=$(grep 'ro.build.date.utc=' "$OUT"/system/build.prop | sed 's/^.*=//')
 	echo ""
 	echo "${CLR_BLD_GRN}Fastboot Zip:${CLR_RST} PenguinOS-$AOSPA_VERSION-img.zip"
 	echo "${CLR_BLD_GRN}OTA zip Complete:${CLR_RST} PenguinOS-$AOSPA_VERSION.zip${CLR_RST}"
         echo "${CLR_BLD_GRN}SIZE:${CLR_RST} $IMG_SIZE bytes"
+        echo "${CLR_BLD_GRN}md5sum:${CLR_RST} $IMG_MD5"
         echo "${CLR_BLD_GRN}SHA256:${CLR_RST} $IMG_SHA256"
         echo "${CLR_BLD_GRN}BUILD STAMP:${CLR_RST} $UTCSTAMP"
         checkExit
@@ -297,7 +303,17 @@ else
     checkExit
 
     cp -f $OUT/aospa_$DEVICE-ota-$FILE_NAME_TAG.zip $OUT/PenguinOS-$AOSPA_VERSION.zip
-    echo "OTA zip Complete: $OUT/PenguinOS-$AOSPA_VERSION.zip"
+
+    IMG_SIZE=$(ls -nl "$OUT/PenguinOS-$AOSPA_VERSION.zip" | awk '{print $5}')
+    IMG_SIZE_MB=$(( ${IMG_SIZE} / 1024 / 1024 ))
+    IMG_MD5=$(md5sum "$OUT/PenguinOS-$AOSPA_VERSION.zip" | awk '{print $1}')
+    IMG_SHA256=$(sha256sum "$OUT/PenguinOS-$AOSPA_VERSION.zip" | awk '{print $1}')
+    UTCSTAMP=$(grep 'ro.build.date.utc=' "$OUT"/system/build.prop | sed 's/^.*=//')
+    echo "${CLR_BLD_GRN}OTA zip Complete:${CLR_RST} $OUT/PenguinOS-$AOSPA_VERSION.zip"
+    echo "${CLR_BLD_GRN}SIZE:${CLR_RST} $IMG_SIZE_MB MB"
+    echo "${CLR_BLD_GRN}md5sum:${CLR_RST} $IMG_MD5"
+    echo "${CLR_BLD_GRN}SHA256:${CLR_RST} $IMG_SHA256"
+    echo "${CLR_BLD_GRN}BUILD STAMP:${CLR_RST} $UTCSTAMP"
 fi
 echo -e ""
 
