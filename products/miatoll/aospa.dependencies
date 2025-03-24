@@ -64,7 +64,7 @@
         "remote":       "github",
         "repository":   "rbnj/vendor_xiaomi_miatoll",
         "target_path":  "vendor/xiaomi/miatoll",
-        "revision":     "uvite",
+        "revision":     "unity",
         "clone-depth":  "1"
     },
     {
