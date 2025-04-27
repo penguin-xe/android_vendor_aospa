@@ -7,7 +7,7 @@
     },
     {
         "remote":       "github",
-        "repository":   "rbnj/positron_miatoll",
+        "repository":   "rbnj/kernel_xiaomi_miatoll",
         "target_path":  "kernel/xiaomi/miatoll",
         "revision":     "unity"
         "clone-depth":  "1"
