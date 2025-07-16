@@ -65,4 +65,9 @@
     <!-- Whether to show a preference item for mobile plan -->
     <bool name="config_show_mobile_plan">false</bool>
 
+    <!-- Sound picker package name -->
+    <string name="config_sound_picker_package_name" translatable="false">
+        com.google.android.soundpicker
+    </string>
+
 </resources>
