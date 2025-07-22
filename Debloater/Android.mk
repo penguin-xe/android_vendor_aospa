@@ -11,7 +11,6 @@ LOCAL_OVERRIDES_PACKAGES += \
     FilesGoogle \
     Gmail2 \
     GoogleFeedback \
-    linktowindows \
     Maps \
     Photos \
     YouTube
