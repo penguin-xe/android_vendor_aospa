@@ -1,7 +1,7 @@
 [
     {
-        "remote":       "aospa",
-        "repository":   "AOSPA/android_device_nothing_phone1",
+        "remote":       "github",
+        "repository":   "xenxynon/android_device_nothing_phone1",
         "target_path":  "device/nothing/phone1",
         "revision":     "uvite"
     },
@@ -30,17 +30,17 @@
         "revision":     "uvite-888"
     },
     {
-        "remote":       "aospa",
-        "repository":   "AOSPA/android_kernel_nothing_sm7325",
+        "remote":       "github",
+        "repository":   "xenxynon/android_kernel_nothing_sm7325",
         "target_path":  "kernel/msm-5.4",
-        "revision":     "uvite"
-    },
-    {
-        "remote":       "blobs",
-        "repository":   "proprietary_vendor_nothing",
-        "target_path":  "vendor/nothing",
         "revision":     "uvite",
         "clone-depth":  "1"
+    },
+    {
+        "remote":       "github",
+        "repository":   "xenxynon/proprietary_vendor_nothing",
+        "target_path":  "vendor/nothing",
+        "revision":     "uvite"
     },
     {
         "remote":       "blobs-gitlab",
