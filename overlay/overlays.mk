@@ -27,7 +27,7 @@ PRODUCT_PACKAGES += \
     AOSPASystemUIOverlay \
     BrightnessSliderFilledOverlay \
     BrightnessSliderThinOverlay \
-    CertifiedPropsOverlay \
+    CertifiedKeyboxOverlay \
     FontGoogleSansOverlay \
     FontHarmonySansOverlay \
     FontInterOverlay \
@@ -81,5 +81,4 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/aospa/overlay/static
 PRODUCT_PACKAGE_OVERLAYS += vendor/aospa/overlay/static
 
 PRODUCT_COPY_FILES += \
-    vendor/aospa/overlay/config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/overlay/config/config.xml \
     vendor/aospa/overlay/partition_order.xml:$(TARGET_COPY_OUT_PRODUCT)/overlay/partition_order.xml

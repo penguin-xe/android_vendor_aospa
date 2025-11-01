@@ -123,6 +123,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.aospa.power-service
 
+# GMS Spoof
+$(call inherit-product, vendor/gms_spoof/config.mk)
+
 # Google - GMS, Pixel, and Mainline Modules
 $(call inherit-product, vendor/google/gms/config.mk)
 $(call inherit-product, vendor/google/pixel/config.mk)
