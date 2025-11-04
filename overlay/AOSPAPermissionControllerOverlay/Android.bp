@@ -1,10 +1,10 @@
 runtime_resource_overlay {
     name: "AOSPAPermissionControllerOverlay",
-    product_specific: true
+    system_ext_specific: true
 }
 
 runtime_resource_overlay {
     name: "AOSPAPermissionControllerMainlineOverlay",
     manifest: "AndroidGoogleManifest.xml",
-    product_specific: true
+    system_ext_specific: true
 }
